@@ -5,6 +5,7 @@ body{
     min-height: 100vh;
     background: #e3f2fd;
     color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -12,6 +13,13 @@ body{
     border-radius: 20px;
     padding: 35px 40px;
     background-color: #000000;
+}
+
+.container header{
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .column{
@@ -58,7 +66,7 @@ header h2 {
 
 .keys-check input:checked:before{
     left: 2rem;
-    background-color: #8c8c8c;
+    background-color: #ffffff;
 }
 
 .piano-keys{
