@@ -1,4 +1,6 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
+const slider = document.querySelector(".volume-slider input");
+
 const mappedKeys = [];
 
 let audio = new Audio("src/audios/a.wav");
@@ -23,3 +25,9 @@ pianoKeys.forEach((key) => {
     key.addEventListener("click", () => playTune(key.dataset.key));
     mappedKeys.push(key.dataset.key);
 });
+
+const handleVolume = (e) => {
+    audio.volume = e.target.value;
+}
+
+slider.addEventListener("input", handleVolume);
